@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "Title": "Create Story",
+    "Description": "As P.O I want to create a new Story So ...",
+    "BusinessValue": 8,
+    "CreationDate": "2023-04-15T23:20:50.8677338+02:00",
+    "Priority": 7,
+    "StoryPoints": "This is a must"
+  },
+  {
+    "Id": 2,
+    "Title": "Edit Story",
+    "Description": "As P.O I want to edit a Story So ...",
+    "BusinessValue": 9,
+    "CreationDate": "2023-04-15T23:20:50.8679903+02:00",
+    "Priority": 6,
+    "StoryPoints": "This is a must/Nice to have"
+  },
+  {
+    "Id": 3,
+    "Title": "Move Story",
+    "Description": "As team member I want to move a Story So ...",
+    "BusinessValue": 9,
+    "CreationDate": "2023-04-15T23:20:50.8679917+02:00",
+    "Priority": 10,
+    "StoryPoints": "This is a new"
+  },
+  {
+    "Id": 4,
+    "Title": "Delete Story",
+    "Description": "As team member I want to delete a Story So ...",
+    "BusinessValue": 10,
+    "CreationDate": "2023-04-15T23:20:50.867992+02:00",
+    "Priority": 10,
+    "StoryPoints": "This is a must"
+  },
+  {
+    "Id": 5,
+    "Title": "Product back log",
+    "Description": "make a produckt back log so there is a place to starte with the scrum board",
+    "BusinessValue": 0,
+    "CreationDate": "2023-04-15T23:21:00",
+    "Priority": 9,
+    "StoryPoints": "8"
+  }
+]

@@ -1,0 +1,45 @@
+﻿@page "{id:int}"
+@model StoriesPro.Pages.UserStories.EditUserStoryModel
+@{
+}
+
+<form method="post">
+	<div class="form-group">
+		<label asp-for="UserStory.Id" class="control-label"></label>
+		<input asp-for="UserStory.Id" class="form-control" readonly="@(true)" />
+	</div>
+	<div class="form-group">
+		<label asp-for="UserStory.Title" class="control-label"></label>
+		<input asp-for="UserStory.Title" class="form-control" />
+		<span asp-validation-for="UserStory.Title" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="UserStory.Description" class="control-label"></label>
+		<input asp-for="UserStory.Description" class="form-control" />
+		<span asp-validation-for="UserStory.Description" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="UserStory.CreationDate" class="control-label"></label>
+		<input asp-for="UserStory.CreationDate" class="form-control" readonly="@(true)" />
+	</div>
+	<div class="form-group">
+		<label asp-for="UserStory.Priority" class="control-label"></label>
+		<input asp-for="UserStory.Priority" class="form-control" />
+		<span asp-validation-for="UserStory.Priority" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="UserStory.StoryPoints" class="control-label"></label>
+		<input asp-for="UserStory.StoryPoints" class="form-control" />
+		<span asp-validation-for="UserStory.StoryPoints" class="text-danger"></span>
+	</div>
+
+	<p>
+		<div class="form-group">
+			<input type="submit" value="Update" class="btn btn-primary" />
+		</div>
+	</p>
+</form>
+
+<p>
+	<a asp-page="/UserStories">Back to List</a>
+</p>

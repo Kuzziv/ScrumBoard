@@ -1,0 +1,31 @@
+﻿@page
+@model StoriesPro.Pages.UserStories.GetAllUserStoriesModel
+@{
+}
+
+<h1>User Stories</h1>
+
+<ul>
+    @foreach (var userstory in @Model.UserStories)
+    {
+        <div class="card mb-2" style="width: 30rem;">
+            <div class="card-header p-2">
+                <h5 class="card-title">(@userstory.Id) @userstory.Title</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">@userstory.Description</p>
+            </div>
+            <div class="card-footer">
+                <a class="btn" type="button" asp-page="DeleteUserStory" asp-route-id="@userstory.Id"><i class="fa fa-trash"></i></a>
+                <a class="btn" type="button" asp-page="EditUserStory" asp-route-id="@userstory.Id"><i class="fa fa-pencil-square-o"></i></a>
+                <a class="btn" type="button" asp-page="UserStoryDetail" asp-route-id="@userstory.Id"><i class="fa fa-info-circle"></i></a>
+            </div>
+        </div>
+    }
+</ul>
+
+<br />
+<p>
+    <a class="btn btn-primary" data-toggle="tooltip" title="Add Item" asp-page="CreateUserStory"><i class="fa fa-plus-square mr-1"></i> New User story </a>
+</p>
+<br />
